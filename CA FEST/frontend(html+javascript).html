@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospitality Process Digitalization</title>
+</head>
+<body>
+    <h1>Upload Group and Hostel Information</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <label for="groupFile">Group Information CSV:</label>
+        <input type="file" id="groupFile" name="groupFile" accept=".csv" required><br><br>
+        <label for="hostelFile">Hostel Information CSV:</label>
+        <input type="file" id="hostelFile" name="hostelFile" accept=".csv" required><br><br>
+        <button type="submit">Upload and Allocate</button>
+    </form>
+
+    <h2>Room Allocation Results</h2>
+    <table id="resultsTable">
+        <!-- Results will be displayed here -->
+    </table>
+
+    <a id="downloadLink" href="#" download="room_allocation.csv">Download Allocation CSV</a>
+
+    <script src="app.js"></script>
+</body>
+</html>
